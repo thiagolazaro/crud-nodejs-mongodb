@@ -8,6 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 require('./controller/authController')(app);
+require('./controller/projectController')(app);
 
 
 app.listen(PORT, () => {
